@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HomeTaskL18</string>
+    <string name="textClickButton">Click</string>
+    <string name="textUrlImageLoadButton">Url loaded image</string>
+</resources>
