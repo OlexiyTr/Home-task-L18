@@ -18,7 +18,7 @@ import java.io.ByteArrayOutputStream
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-
+    private val LOG_TAG = "TAG"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setupBinding()
@@ -64,7 +64,8 @@ class MainActivity : AppCompatActivity() {
         canvas.drawLine(startX, startY, stopX, stopY, paint)
         binding.imageBit.setImageBitmap(bmp)
         val byteArray = getByteArrayFromBitmap(bmp)
-        Log.d("TAG",byteArray.toString())
+
+        Log.d(LOG_TAG, java.util.Arrays.toString(byteArray))
     }
 
     private fun getByteArrayFromBitmap(bitmap: Bitmap): ByteArray {
